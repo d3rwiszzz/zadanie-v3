@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog samochodowy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Wybierz konfigurację samochodu</h1>
+
+    <h2>Rodzaj nadwozia</h2>
+    <form>
+        <label><input type="radio" name="nadwozie" value="hatchback"> Hatchback</label><br>
+        <label><input type="radio" name="nadwozie" value="kabriolet"> Kabriolet</label><br>
+        <label><input type="radio" name="nadwozie" value="kombi"> Kombi</label>
+    </form>
+
+    <h2>Rodzaj silnika</h2>
+    <select>
+        <option value="benzynowy">Benzynowy</option>
+        <option value="diesel" selected>Wysokoprężny</option>
+        <option value="elektryczny">Elektryczny</option>
+        <option value="hybrydowy">Hybrydowy</option>
+    </select>
+
+    <h2>Wyposażenie samochodu</h2>
+    <form>
+        <label><input type="checkbox" checked> Klimatyzacja</label><br>
+        <label><input type="checkbox" checked> Systemy: ESP i ABS</label><br>
+        <label><input type="checkbox" checked> Tapicerka skórzana</label><br>
+        <label><input type="checkbox" checked> Tempomat</label><br>
+        <label><input type="checkbox"> Tylni spojler dachowy</label><br>
+        <label><input type="checkbox"> Radio z Bluetooth</label><br>
+        <label><input type="checkbox"> Reflektory przeciwmgłowe</label><br>
+        <label><input type="checkbox"> Przyciemniane tylne szyby</label><br>
+        <label><input type="checkbox"> Czujniki parkowania</label><br>
+        <label><input type="checkbox"> Podgrzewane fotele przód</label><br>
+        <label><input type="checkbox"> Składane lusterka</label><br>
+        <label><input type="checkbox"> Światła LED do jazdy dziennej</label><br>
+        <label><input type="checkbox"> Typ sport</label><br>
+        <label><input type="checkbox"> Instalacja gazowa</label><br>
+        <label><input type="checkbox"> Podgrzewane fotele tył</label><br>
+        <label><input type="checkbox"> Ksenony</label><br>
+    </form>
+
+    <h2>Jakie odświeżacze zapachowe?</h2>
+    <select>
+        <option value="kokos">Kokos</option>
+        <option value="cytrynowa">Cytrynowa</option>
+        <option value="truskawkowa">Truskawkowa</option>
+        <option value="brzoskwiniowa">Brzoskwiniowa</option>
+    </select>
+
+</body>
+</html>
+
+
+body {
+    background-color: #222;
+    color: orange;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 26px;
+}
+
+h2 {
+    color: cyan;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+}
+
+input, select {
+    margin: 5px 0;
+    padding: 5px;
+    font-size: 14px;
+    background-color: #333;
+    color: white;
+    border: 1px solid orange;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+}
